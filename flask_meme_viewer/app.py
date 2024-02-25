@@ -26,5 +26,5 @@ def meme_page():
      response = get_meme_detailed()
      return render_template("details.html", response=response)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80, debug=True)
+#if __name__ == "__main__":
+#    app.run(host="0.0.0.0", port=80, debug=True)
