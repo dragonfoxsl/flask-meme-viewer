@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flask-meme-viewer"
+version = "0.1.0"
+description = ""
+authors = ["Bisina Wickremasinghe <bisina@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_meme_viewer"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.2"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

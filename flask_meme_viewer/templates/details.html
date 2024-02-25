@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme <Details></Details></title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium';
+        }
+
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Meme from Reddit</h1>
+    <img src="{{response['preview'][-2]}}" alt="Meme">
+    <p>Subreddit Link: <a href="{{response['postLink']}}">{{response['postLink']}}</a></p>
+    <p><b>Full Response</b></p>
+    <code>
+        {{response}}
+    </pre>
+</body>
+</html>
